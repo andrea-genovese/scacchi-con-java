@@ -30,7 +30,6 @@ public class Scacchiera {
 	public Scacchiera(String Fen) {
 		int riga = 0;
 		int colonna = 0;
-		boolean isWhite = false;
 		int i = 0;
 		for (; i < Fen.length() && Fen.charAt(i) != ' '; i++, colonna++) {
 			char c = Fen.charAt(i);
@@ -38,41 +37,11 @@ public class Scacchiera {
 				colonna += c - '0' - 1;
 				continue;
 			}
-			if (c < 'a')
-				isWhite = true;
-			else
-				isWhite = false;
-			switch (c) {
-				case 'p':
-				case 'P':
-					array[riga][colonna] = new Pedone(colonna, riga, isWhite, this);
-					break;
-				case 'b':
-				case 'B':
-					array[riga][colonna] = new Alfiere(colonna, riga, isWhite, this);
-					break;
-				case 'n':
-				case 'N':
-					array[riga][colonna] = new Cavallo(colonna, riga, isWhite, this);
-					break;
-				case 'r':
-				case 'R':
-					array[riga][colonna] = new Torre(colonna, riga, isWhite, this);
-					break;
-				case 'q':
-				case 'Q':
-					array[riga][colonna] = new Donna(colonna, riga, isWhite, this);
-					break;
-				case 'k':
-				case 'K':
-					array[riga][colonna] = new Re(colonna, riga, isWhite, this);
-					break;
-				case '/':
-					riga++;
-					colonna = -1;
-					break;
-				default:
-					throw new IllegalArgumentException("Input istruzione switch inaspettato.");
+			if (c == '/') {
+				riga++;
+				colonna = -1;
+			} else {
+				array[riga][colonna] = Pezzo.createFromChar(colonna, riga, c, this);
 			}
 
 		}

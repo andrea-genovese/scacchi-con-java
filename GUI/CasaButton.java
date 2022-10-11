@@ -15,7 +15,7 @@ public class CasaButton extends JButton {
 		this.i = i;
 		this.j = j;
 		if((i + j) % 2 == 0) setBackground(Color.LIGHT_GRAY);
-		else setBackground(Color.BLUE);
+		else setBackground(Color.DARK_GRAY);
 		setBorderPainted(false);
 		setFocusable(false);
 		addActionListener(new ActionListener(){

@@ -12,9 +12,9 @@ public class Cavallo extends Pezzo {
 	public Cavallo(int x, int y, boolean isWhite, Scacchiera s) {
 		super(x, y, isWhite, s);
 		if(isWhite) {
-			icon= new ImageIcon("src/Icone/CavalloBianco.png");
+			icon= new ImageIcon("./Icone/CavalloBianco.png");
 		} else {
-			icon = new ImageIcon("src/Icone/CavalloNero.png");
+			icon = new ImageIcon("./Icone/CavalloNero.png");
 		}
 	}
 

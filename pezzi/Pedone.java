@@ -12,16 +12,16 @@ public class Pedone extends Pezzo {
 	public Pedone(int x, int y, boolean isWhite, Scacchiera s) {
 		super(x, y, isWhite, s);
 		if(isWhite) {
-			icon= new ImageIcon("src/Icone/PedoneBianco.png");
+			icon= new ImageIcon("./Icone/PedoneBianco.png");
 		} else {
-			icon = new ImageIcon("src/Icone/PedoneNero.png");
+			icon = new ImageIcon("./Icone/PedoneNero.png");
 		}
 	}
 
 	@Override
 	public ArrayList<Mossa> getMosse() {
 		if(this.y == 0 || this.y == 7) {
-			throw new IllegalCallerException("non può esserci un pedone sulla prima o ultima traversa"+this.toString());
+			throw new IllegalCallerException("non puï¿½ esserci un pedone sulla prima o ultima traversa"+this.toString());
 		}
 		if(this.isWhite) {
 			return getMosseBianco();

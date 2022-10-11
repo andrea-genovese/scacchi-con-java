@@ -12,9 +12,9 @@ public class Alfiere extends Pezzo {
 	public Alfiere(int x, int y, boolean isWhite, Scacchiera s) {
 		super(x, y, isWhite, s);
 		if(isWhite) {
-			icon= new ImageIcon("src/Icone/AlfiereBianco.png");
+			icon= new ImageIcon("./Icone/AlfiereBianco.png");
 		} else {
-			icon = new ImageIcon("src/Icone/AlfiereNero.png");
+			icon = new ImageIcon("./Icone/AlfiereNero.png");
 		}
 	}
 

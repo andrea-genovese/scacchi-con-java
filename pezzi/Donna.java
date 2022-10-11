@@ -9,9 +9,9 @@ public class Donna extends Pezzo {
 	public Donna(int x, int y, boolean isWhite, Scacchiera s) {
 		super(x, y, isWhite, s);
 		if(isWhite) {
-			icon= new ImageIcon("src/Icone/DonnaBianca.png");
+			icon= new ImageIcon("./Icone/DonnaBianca.png");
 		} else {
-			icon = new ImageIcon("src/Icone/DonnaNera.png");
+			icon = new ImageIcon("./Icone/DonnaNera.png");
 		}
 	}
 

@@ -12,9 +12,9 @@ public class Torre extends Pezzo {
 	public Torre(int x, int y, boolean isWhite, Scacchiera s) {
 		super(x, y, isWhite, s);
 		if(isWhite) {
-			icon= new ImageIcon("src/Icone/TorreBianca.png");
+			icon= new ImageIcon("./Icone/TorreBianca.png");
 		} else {
-			icon = new ImageIcon("src/Icone/TorreNera.png");
+			icon = new ImageIcon("./Icone/TorreNera.png");
 		}
 	}
 

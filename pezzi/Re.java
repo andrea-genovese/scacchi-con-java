@@ -12,9 +12,9 @@ public class Re extends Pezzo {
 	public Re(int x, int y, boolean isWhite, Scacchiera s) {
 		super(x, y, isWhite, s);
 		if(isWhite) {
-			icon= new ImageIcon("src/Icone/ReBianco.png");
+			icon= new ImageIcon("./Icone/ReBianco.png");
 		} else {
-			icon = new ImageIcon("src/Icone/ReNero.png");
+			icon = new ImageIcon("./Icone/ReNero.png");
 		}
 	}
 

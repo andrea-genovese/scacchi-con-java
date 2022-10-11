@@ -1,8 +1,6 @@
 package GUI;
 import java.awt.FlowLayout;
-
 import javax.swing.JFrame;
-
 import main.EndException;
 import main.Scacchiera;
 import main.ScaccoMattoException;
@@ -26,7 +24,6 @@ public class InterfacciaGrafica extends JFrame {
 		pack();
 		setLocationRelativeTo(null);
 		aggiorna();
-		
 	}
 	public InterfacciaGrafica() {
 		this(new Scacchiera());

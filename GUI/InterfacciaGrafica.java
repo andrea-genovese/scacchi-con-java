@@ -23,6 +23,7 @@ public class InterfacciaGrafica extends JFrame {
 		setLayout(new FlowLayout());
 		pack();
 		setLocationRelativeTo(null);
+		setResizable(false);
 		aggiorna();
 	}
 	public InterfacciaGrafica() {
